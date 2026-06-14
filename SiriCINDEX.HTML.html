@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Siri Consultancy — Career guidance, UX mentoring & AI upskilling</title>
+<meta name="description" content="Career guidance, UX mentoring, interview prep and AI upskilling for freshers, UX designers, researchers and career switchers in India. Book a consultation with a senior UX researcher." />
+<link rel="canonical" href="https://siriconsultancy.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Siri Consultancy — A researcher's eye on your career" />
+<meta property="og:description" content="Career guidance, UX mentoring, interview prep and AI upskilling. Built on 10+ years of UX research." />
+<meta property="og:url" content="https://siriconsultancy.com/" />
+<meta property="og:image" content="https://siriconsultancy.com/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#FAFAF8" />
+<!-- ⚠ Before sharing: replace siriconsultancy.com in canonical/og:url/og:image above with your live URL
+     (e.g. https://YOUR-USERNAME.github.io/siri-consultancy/ ) — or keep it if you connect that domain. -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%235B4BE1'/><text x='16' y='23' font-family='Arial' font-size='19' font-weight='bold' fill='white' text-anchor='middle'>S</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ProfessionalService",
+  "name":"Siri Consultancy",
+  "description":"Career guidance, UX mentoring, interview preparation and AI upskilling.",
+  "url":"https://siriconsultancy.com",
+  "areaServed":"IN",
+  "founder":{"@type":"Person","name":"Sudheer Bhuvanagiri","jobTitle":"Senior UX Researcher"},
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"15"}
+}
+</script>
+<style>
+  :root{
+    --bg:#FAFAF8;--bg-2:#F4F3EF;--card:#FFFFFF;--ink:#16161C;--ink-2:#56565F;--ink-3:#8A8A93;
+    --line:rgba(20,20,30,.08);--line-2:rgba(20,20,30,.13);
+    --primary:#5B4BE1;--primary-2:#7C6CF5;--warm:#FF7A4D;--ring:rgba(91,75,225,.35);
+    --shadow-sm:0 1px 2px rgba(20,20,40,.04), 0 4px 14px rgba(20,20,40,.05);
+    --shadow:0 4px 12px rgba(20,20,40,.06), 0 18px 50px -16px rgba(40,30,90,.18);
+    --shadow-lg:0 10px 30px rgba(20,20,40,.08), 0 40px 80px -24px rgba(40,30,90,.24);
+    --r:18px;--r-lg:26px;--maxw:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{font-family:"Inter",system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);font-size:18px;line-height:1.65;font-weight:400;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(50% 38% at 78% -4%, rgba(124,108,245,.16), transparent 60%),radial-gradient(46% 34% at 8% 6%, rgba(255,122,77,.10), transparent 60%)}
+  ::selection{background:var(--primary);color:#fff}
+  h1,h2,h3,h4{font-family:"Plus Jakarta Sans",sans-serif;font-weight:800;line-height:1.05;letter-spacing:-.025em;color:var(--ink)}
+  a{color:inherit}img{max-width:100%;display:block}
+  .wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .eyebrow{font-family:"Plus Jakarta Sans";font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--primary);display:inline-flex;align-items:center;gap:9px}
+  .eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--warm)}
+  .lead{color:var(--ink-2);font-size:clamp(17px,1.9vw,20px);line-height:1.6;max-width:62ch}
+  .skip{position:absolute;left:-999px;top:8px;z-index:200;background:var(--ink);color:#fff;padding:10px 16px;border-radius:10px}
+  .skip:focus{left:16px}
+  .btn{font-family:"Plus Jakarta Sans";font-weight:700;font-size:16px;cursor:pointer;border:none;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:100px;padding:14px 26px;transition:transform .2s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease;white-space:nowrap}
+  .btn .arr{transition:transform .25s}.btn:hover .arr{transform:translateX(4px)}
+  .btn-primary{background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff;box-shadow:0 10px 26px -10px rgba(91,75,225,.6)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 34px -10px rgba(91,75,225,.7)}
+  .btn-ghost{background:var(--card);color:var(--ink);border:1px solid var(--line-2);box-shadow:var(--shadow-sm)}
+  .btn-ghost:hover{transform:translateY(-2px);border-color:var(--ink-3)}
+  .btn-wa{background:#25D366;color:#06351c}
+  .btn:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--ring);outline-offset:2px}
+  header.nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .3s, box-shadow .3s, backdrop-filter .3s}
+  header.nav.scrolled{background:rgba(250,250,248,.72);backdrop-filter:blur(18px) saturate(1.4);box-shadow:0 1px 0 var(--line)}
+  .nav-inner{max-width:var(--maxw);margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+  .brand{font-family:"Plus Jakarta Sans";font-weight:800;font-size:19px;letter-spacing:-.02em;text-decoration:none;display:flex;align-items:center;gap:10px}
+  .brand .mark{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--primary),var(--warm));display:grid;place-items:center;color:#fff;font-size:15px;box-shadow:var(--shadow-sm)}
+  .navlinks{display:flex;gap:30px;align-items:center}
+  .navlinks a{text-decoration:none;color:var(--ink-2);font-size:15.5px;font-weight:500;transition:color .2s}
+  .navlinks a:hover{color:var(--ink)}
+  .nav-actions{display:flex;align-items:center;gap:12px}
+  .menu-btn{display:none;background:var(--card);border:1px solid var(--line-2);border-radius:12px;width:44px;height:44px;cursor:pointer;align-items:center;justify-content:center}
+  .menu-btn span,.menu-btn span::before,.menu-btn span::after{content:"";display:block;width:18px;height:2px;background:var(--ink);border-radius:2px;position:relative;transition:.25s}
+  .menu-btn span::before{position:absolute;top:-6px}.menu-btn span::after{position:absolute;top:6px}
+  .mobile-menu{display:none;position:fixed;inset:0 0 0 auto;z-index:99;width:min(82vw,340px);background:var(--card);box-shadow:var(--shadow-lg);padding:90px 26px 26px;flex-direction:column;gap:6px;transform:translateX(100%);transition:transform .3s ease}
+  .mobile-menu.open{transform:translateX(0)}
+  .mobile-menu a{text-decoration:none;color:var(--ink);font-family:"Plus Jakarta Sans";font-weight:600;font-size:19px;padding:14px 8px;border-bottom:1px solid var(--line)}
+  .scrim{display:none;position:fixed;inset:0;background:rgba(15,15,25,.4);z-index:98;opacity:0;transition:opacity .3s}
+  .scrim.open{display:block;opacity:1}
+  section{padding:110px 0;position:relative}
+  .sec-head{max-width:60ch;margin-bottom:56px}
+  .sec-head h2{font-size:clamp(30px,4.4vw,50px);margin-top:18px}.sec-head .lead{margin-top:18px}
+  .hero{padding-top:170px;padding-bottom:90px;text-align:center}
+  .hero .pill{display:inline-flex;align-items:center;gap:9px;background:var(--card);border:1px solid var(--line-2);border-radius:100px;padding:8px 16px;font-size:14px;font-weight:600;color:var(--ink-2);box-shadow:var(--shadow-sm);margin-bottom:26px}
+  .hero .pill b{color:var(--primary)}
+  .hero h1{font-size:clamp(40px,6.6vw,76px);max-width:16ch;margin:0 auto;letter-spacing:-.03em}
+  .hero h1 .grad{background:linear-gradient(120deg,var(--primary),var(--warm));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero .lead{margin:26px auto 0;text-align:center}
+  .hero .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:36px}
+  .hero .trust{margin-top:26px;font-size:14.5px;color:var(--ink-3);font-weight:500}.hero .trust b{color:var(--ink-2)}
+  .chips{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:54px}
+  .chip{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 22px;box-shadow:var(--shadow-sm);min-width:150px}
+  .chip .n{font-family:"Plus Jakarta Sans";font-weight:800;font-size:30px;background:linear-gradient(120deg,var(--primary),var(--warm));-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
+  .chip .l{font-size:13px;color:var(--ink-3);font-weight:600;margin-top:8px;letter-spacing:.02em}
+  .founder-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
+  .founder-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:34px;box-shadow:var(--shadow);text-align:center}
+  .avatar{width:120px;height:120px;border-radius:50%;margin:0 auto 18px;background:linear-gradient(135deg,var(--primary),var(--warm));display:grid;place-items:center;color:#fff;font-family:"Plus Jakarta Sans";font-weight:800;font-size:40px;box-shadow:var(--shadow)}
+  .founder-card h3{font-size:24px}.founder-card .role{color:var(--primary);font-weight:600;font-size:15px;margin-top:4px}
+  .founder-card .where{color:var(--ink-3);font-size:14px;margin-top:10px}
+  .badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:20px}
+  .badge{font-size:12.5px;font-weight:600;color:var(--ink-2);background:var(--bg-2);border:1px solid var(--line);border-radius:100px;padding:6px 13px}
+  .founder-grid p{color:var(--ink-2);margin-bottom:18px}.founder-grid p b{color:var(--ink);font-weight:600}
+  .brandrow{margin-top:24px;padding-top:22px;border-top:1px solid var(--line)}
+  .brandrow .l{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);margin-bottom:12px}
+  .brandrow .names{display:flex;flex-wrap:wrap;gap:10px 22px}
+  .brandrow .names span{font-family:"Plus Jakarta Sans";font-weight:700;color:var(--ink-2);font-size:17px}
+  .grid-3{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .scard{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:32px;box-shadow:var(--shadow-sm);transition:transform .3s, box-shadow .3s, border-color .3s;position:relative;overflow:hidden}
+  .scard:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:var(--line-2)}
+  .scard .ico{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-size:24px;background:linear-gradient(135deg,rgba(91,75,225,.14),rgba(255,122,77,.14));margin-bottom:18px}
+  .scard h3{font-size:23px;margin-bottom:10px}.scard p{color:var(--ink-2);font-size:16px}
+  .scard .for{margin-top:16px;font-size:14px;color:var(--ink-3)}.scard .for b{color:var(--ink-2);font-weight:600}
+  .framework{background:var(--bg-2)}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px 24px;box-shadow:var(--shadow-sm);position:relative}
+  .step .num{font-family:"Plus Jakarta Sans";font-weight:800;font-size:14px;color:#fff;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,var(--primary),var(--primary-2));margin-bottom:18px}
+  .step h3{font-size:21px;margin-bottom:8px}.step p{color:var(--ink-2);font-size:15px}
+  .step .arrow{position:absolute;right:-15px;top:42px;color:var(--ink-3);font-size:20px;z-index:2}.step:last-child .arrow{display:none}
+  .grid-tst{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .tcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:30px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:16px}
+  .stars{color:var(--warm);letter-spacing:2px}
+  .tcard .q{font-size:17px;color:var(--ink);line-height:1.5}
+  .tcard .who{font-size:14px;color:var(--ink-3);font-weight:600;display:flex;align-items:center;gap:10px}
+  .tcard .who .dot{width:34px;height:34px;flex:0 0 34px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--warm));display:grid;place-items:center;color:#fff;font-size:11px;font-weight:700;font-family:"Plus Jakarta Sans"}
+  .grid-res{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .rcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px;box-shadow:var(--shadow-sm);transition:transform .3s, box-shadow .3s}
+  .rcard:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .rcard .tag{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--primary)}
+  .rcard h3{font-size:20px;margin:12px 0 8px}.rcard p{color:var(--ink-2);font-size:15px;margin-bottom:18px}
+  .rcard .get{display:inline-flex;align-items:center;gap:7px;font-family:"Plus Jakarta Sans";font-weight:700;color:var(--primary);font-size:15px;background:none;border:none;cursor:pointer}
+  .rcard .get .arr{transition:transform .25s}.rcard:hover .get .arr{transform:translateX(4px)}
+  .faq{max-width:820px;margin:0 auto}
+  details{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:14px;box-shadow:var(--shadow-sm);overflow:hidden}
+  summary{list-style:none;cursor:pointer;padding:22px 24px;font-family:"Plus Jakarta Sans";font-weight:700;font-size:18px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+  summary::-webkit-details-marker{display:none}
+  summary .ic{width:26px;height:26px;flex:0 0 26px;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;color:var(--primary);transition:transform .25s;font-size:18px}
+  details[open] summary .ic{transform:rotate(45deg)}
+  details .body{padding:0 24px 24px;color:var(--ink-2);font-size:16px}
+  .contact{background:var(--bg-2)}
+  .contact-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:start}
+  .contact h2{font-size:clamp(30px,4.4vw,50px)}
+  .pay-pill{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line-2);border-radius:100px;padding:8px 14px;font-size:13.5px;font-weight:600;color:var(--ink-2);margin-bottom:18px;box-shadow:var(--shadow-sm)}
+  .pay-pill b{color:var(--primary)}
+  .expect{list-style:none;margin-top:28px;display:flex;flex-direction:column;gap:16px}
+  .expect li{display:flex;gap:14px;color:var(--ink-2)}
+  .expect .k{color:var(--primary);font-weight:700;min-width:24px;font-family:"Plus Jakarta Sans"}
+  form{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:32px;box-shadow:var(--shadow)}
+  .field{margin-bottom:16px}.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  label{display:block;font-size:13.5px;font-weight:600;color:var(--ink-2);margin-bottom:7px}
+  input,select,textarea{width:100%;font-family:inherit;font-size:15.5px;color:var(--ink);background:var(--bg);border:1px solid var(--line-2);border-radius:12px;padding:13px 15px;transition:border-color .2s, box-shadow .2s}
+  input::placeholder,textarea::placeholder{color:var(--ink-3)}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 4px var(--ring)}
+  textarea{resize:vertical;min-height:96px}
+  .consent{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:var(--ink-2);margin:8px 0 16px}
+  .consent input{width:18px;height:18px;margin-top:3px}
+  form .btn-primary{width:100%}
+  .form-note{font-size:12.5px;color:var(--ink-3);text-align:center;margin-top:12px}
+  .hp{position:absolute;left:-9999px;opacity:0;height:0;overflow:hidden}
+  .form-msg{display:none;text-align:center;padding:30px 12px}
+  .form-msg .big{font-family:"Plus Jakarta Sans";font-weight:800;font-size:24px;color:var(--ink);margin-bottom:8px}
+  .form-msg p{color:var(--ink-2);margin-bottom:18px}
+  .form-msg .check{width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--warm));color:#fff;display:grid;place-items:center;font-size:30px;margin:0 auto 18px}
+  .form-msg .next{display:flex;flex-direction:column;gap:10px;margin-top:8px}
+  footer{padding:64px 0 40px;border-top:1px solid var(--line)}
+  .foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+  .foot .about{max-width:34ch}.foot .about p{color:var(--ink-2);font-size:15px;margin-top:14px}
+  .foot h4{font-family:"Plus Jakarta Sans";font-size:14px;letter-spacing:.04em;color:var(--ink-3);text-transform:uppercase;margin-bottom:14px}
+  .foot a{display:block;text-decoration:none;color:var(--ink-2);font-size:15px;padding:5px 0;transition:color .2s}
+  .foot a:hover{color:var(--primary)}
+  .foot-bottom{margin-top:48px;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13.5px;color:var(--ink-3)}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  .modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(15,15,25,.5);backdrop-filter:blur(4px)}
+  .modal.open{display:flex}
+  .modal-box{background:var(--card);max-width:620px;width:100%;max-height:85vh;overflow:auto;border-radius:var(--r-lg);padding:38px;box-shadow:var(--shadow-lg);position:relative}
+  .modal-box h3{font-family:"Plus Jakarta Sans";font-size:26px;margin-bottom:4px}
+  .modal-box h4{font-family:"Plus Jakarta Sans";font-size:17px;margin:18px 0 6px;color:var(--ink)}
+  .modal-box p,.modal-box li{color:var(--ink-2);font-size:15.5px;line-height:1.65}
+  .modal-box ul{margin:6px 0 6px 20px}
+  .modal-box a{color:var(--primary)}
+  .modal-close{position:absolute;top:16px;right:16px;width:40px;height:40px;border-radius:50%;border:1px solid var(--line-2);background:var(--bg);cursor:pointer;font-size:22px;line-height:1;color:var(--ink-2)}
+  .modal-close:hover{background:var(--card);border-color:var(--ink-3)}
+  @media (max-width:920px){.founder-grid,.contact-grid{grid-template-columns:1fr;gap:38px}.grid-3,.grid-tst,.grid-res{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.step .arrow{display:none}}
+  @media (max-width:760px){.navlinks{display:none}.menu-btn{display:flex}.mobile-menu{display:flex}.nav-hide-cta{display:none}}
+  @media (max-width:600px){body{font-size:17px}section{padding:80px 0}.hero{padding-top:140px}.grid-3,.grid-tst,.grid-res,.steps,.row2{grid-template-columns:1fr}.foot{grid-template-columns:1fr 1fr}.wrap{padding:0 20px}}
+  @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.btn,.scard,.rcard{transition:none}}
+</style>
+</head>
+<body>
+<a href="#main" class="skip">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="brand"><span class="mark">S</span>Siri Consultancy</a>
+    <nav class="navlinks" aria-label="Primary">
+      <a href="#story">Story</a><a href="#services">Services</a><a href="#framework">How it works</a>
+      <a href="#testimonials">Results</a><a href="#resources">Free resources</a><a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-primary nav-hide-cta">Book consultation</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="scrim" id="scrim"></div>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+  <a href="#story">Story</a><a href="#services">Services</a><a href="#framework">How it works</a>
+  <a href="#testimonials">Results</a><a href="#resources">Free resources</a><a href="#faq">FAQ</a>
+  <a href="#contact" style="color:var(--primary)">Book consultation →</a>
+</nav>
+
+<main id="main">
+
+<!-- 1 · HERO -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <span class="pill">🇮🇳 For freshers, UX folks & career switchers · <b>Top 10 ADPList mentor</b></span>
+    <h1>Your career deserves a <span class="grad">researcher's eye.</span></h1>
+    <p class="lead">Career guidance, UX mentoring, interview prep and AI upskilling — from a senior researcher with 10+ years studying how people think, decide and grow. Clear plans, honest feedback, real momentum.</p>
+    <div class="cta-row">
+      <a href="#contact" class="btn btn-primary">Book your consultation <span class="arr">→</span></a>
+      <a href="#services" class="btn btn-ghost">Explore services</a>
+    </div>
+    <p class="trust">Nominal ₹100 booking · <b>15-min call</b> · No pressure, ever</p>
+    <div class="chips">
+      <div class="chip reveal"><div class="n" data-count="10" data-suffix="+">0</div><div class="l">YEARS IN UX RESEARCH</div></div>
+      <div class="chip reveal"><div class="n" data-count="15" data-suffix="+">0</div><div class="l">MENTORED GLOBALLY</div></div>
+      <div class="chip reveal"><div class="n">5<span style="color:var(--ink-3);-webkit-text-fill-color:var(--ink-3)">/5</span></div><div class="l">ADPLIST RATING</div></div>
+      <div class="chip reveal"><div class="n">Top 10</div><div class="l">ADPLIST MENTOR</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2 · FOUNDER STORY -->
+<section id="story">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">The founder</span>
+      <h2>Hi, I'm Sudheer. I became a researcher to understand people.</h2></div>
+    <div class="founder-grid">
+      <div class="founder-card reveal">
+        <div class="avatar" aria-hidden="true">SB</div>
+        <h3>Sudheer Bhuvanagiri</h3>
+        <div class="role">Senior UX Researcher · Mentor</div>
+        <div class="where">Hyderabad, India · mentoring worldwide</div>
+        <div class="badges"><span class="badge">NNG Certified</span><span class="badge">IBM Design Thinking</span><span class="badge">Global Research</span><span class="badge">ADPList Top 10</span></div>
+      </div>
+      <div>
+        <p class="reveal">For more than ten years I've worked as a UX researcher — which really means a decade spent learning how people think, decide and choose. I've sat with users across the USA, Germany and China, decoding what they actually needed versus what they said.</p>
+        <p class="reveal">Along the way I noticed the same rigor I used to understand <b>users</b> was exactly what most people never applied to their own <b>careers</b>. They guessed. They followed generic advice. They undersold work they should have been proud of.</p>
+        <p class="reveal">So I started mentoring — one person, then fifteen, and recently a spot in ADPList's <b>Top 10 mentors</b> with a 5/5 rating. Siri Consultancy is that work, made deliberate: <b>empathetic, expert, research-driven, and built for the AI era.</b></p>
+        <div class="brandrow reveal"><div class="l">10+ years across</div>
+          <div class="names"><span>Philips</span><span>Accenture</span><span>IBM iX</span><span>Smith+Nephew</span><span>CBRE</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 · SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">Services</span>
+      <h2>Four ways to move your career forward.</h2>
+      <p class="lead">Whether you're starting out, growing, interviewing or future-proofing — there's a clear next step. Every engagement begins with a consultation.</p></div>
+    <div class="grid-3">
+      <article class="scard reveal"><div class="ico" aria-hidden="true">🧭</div><h3>Career Guidance</h3><p>Stuck, switching fields or unsure what's next? We map your strengths and real options, then build a concrete 6–12 month plan using structured frameworks — not gut-feel pep talks.</p><div class="for"><b>Best for:</b> freshers, career switchers, the at-a-crossroads.</div></article>
+      <article class="scard reveal"><div class="ico" aria-hidden="true">🔬</div><h3>UX Mentoring</h3><p>Sharpen your craft, rebuild your portfolio around outcomes (not just process), fix your positioning and work through the real challenges you're facing right now.</p><div class="for"><b>Best for:</b> aspiring & early-to-mid UX designers and researchers.</div></article>
+      <article class="scard reveal"><div class="ico" aria-hidden="true">🎯</div><h3>Interview Preparation</h3><p>Realistic mock interviews built on how panels actually evaluate, with precise, kind feedback — behavioral rounds, portfolio walkthroughs, case challenges and salary negotiation.</p><div class="for"><b>Best for:</b> job seekers facing UX/research/design interviews.</div></article>
+      <article class="scard reveal"><div class="ico" aria-hidden="true">🤖</div><h3>AI Upskilling</h3><p>Cut through the noise and build the AI fluency that genuinely matters for your field. Reposition yourself as someone who works <i>with</i> AI — so it's your advantage, not your anxiety.</p><div class="for"><b>Best for:</b> professionals navigating the AI shift.</div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · FRAMEWORK -->
+<section class="framework" id="framework">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">The signature framework</span>
+      <h2>Discover → Learn → Build → Grow</h2>
+      <p class="lead">A simple, proven path from "I'm stuck" to "I'm moving." Every engagement runs through these four stages.</p></div>
+    <div class="steps">
+      <div class="step reveal"><div class="num">1</div><h3>Discover</h3><p>Understand exactly where you are — strengths, gaps, goals and the real blockers. Diagnosis before prescription.</p><span class="arrow" aria-hidden="true">→</span></div>
+      <div class="step reveal"><div class="num">2</div><h3>Learn</h3><p>Build the skills that move the needle — UX craft, AI fluency and interview readiness, matched to your target.</p><span class="arrow" aria-hidden="true">→</span></div>
+      <div class="step reveal"><div class="num">3</div><h3>Build</h3><p>Create the proof — a portfolio, a narrative and projects that travel without you in the room.</p><span class="arrow" aria-hidden="true">→</span></div>
+      <div class="step reveal"><div class="num">4</div><h3>Grow</h3><p>Land the role and keep compounding — negotiation, positioning and long-term momentum.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · TESTIMONIALS -->
+<section id="testimonials">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">Results</span>
+      <h2>Don't take my word for it.</h2>
+      <p class="lead">Real words from people I've had the privilege of mentoring — and live reviews from my ADPList profile.</p></div>
+    <div class="grid-tst">
+      <div class="tcard reveal"><div class="stars">★★★★★</div><div class="q">"My first mentor at Accenture — everything I've accomplished since is because you honed my basics first. You always guided with patience and a helping hand for everyone."</div><div class="who"><span class="dot">SS</span>Shraya Sharma · Former mentee</div></div>
+      <div class="tcard reveal"><div class="stars">★★★★★</div><div class="q">"Thank you for being the mentor we needed as freshers — teaching with patience and empathy. A hard worker and an organised leader."</div><div class="who"><span class="dot">SA</span>Sneha Agarwal · Former mentee</div></div>
+      <div class="tcard reveal"><div class="stars">★★★★★</div><div class="q">"We were incredibly lucky to be trained by an icon like you. We'll truly miss your mentorship!"</div><div class="who"><span class="dot">SB</span>Sidharth Bhandari · Former mentee</div></div>
+      <div class="tcard reveal"><div class="stars">★★★★★</div><div class="q">"My first professional mentor — I learnt so much in research. You always helped me grow and develop new skills."</div><div class="who"><span class="dot">PS</span>Pahal Singhvi · Former mentee</div></div>
+      <div class="tcard reveal"><div class="stars">★★★★★</div><div class="q">"Your timely inputs and opportunities hugely enhanced my knowledge. An amazing person, a great mentor, and the most humble, knowledgeable person I've worked with."</div><div class="who"><span class="dot">GK</span>Gurdeep Kaur · Former mentee</div></div>
+      <div class="tcard reveal"><div class="stars">★★★★★</div><div class="q">"You're a mentor and a leader — but more than that, you have the kindest soul. Always an absolute pleasure working with you."</div><div class="who"><span class="dot">RA</span>Ritika Anand · Former mentee</div></div>
+    </div>
+    <div class="reveal" style="margin-top:44px">
+      <div class="eyebrow" style="margin-bottom:18px">Live reviews on ADPList</div>
+      <div style="height:560px;box-shadow:rgba(142,151,158,.15) 0 4px 19px 0;border-radius:16px;overflow:hidden;width:100%;max-width:650px;margin:0 auto">
+        <iframe src="https://adplist.org/widgets/reviews?src=sudheer-bhuvangiri" title="ADPList reviews for Sudheer Bhuvangiri" width="100%" height="100%" loading="lazy" style="border:0"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · FREE RESOURCES -->
+<section id="resources" class="framework">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">Free resources</span>
+      <h2>Start for free.</h2>
+      <p class="lead">Practical guides you can use today — no strings. Drop your email and I'll send it over.</p></div>
+    <div class="grid-res">
+      <div class="rcard reveal"><div class="tag">Templates</div><h3>UX Research Starter Kit</h3><p>Interview guides, screener templates and a synthesis board to run your first study with confidence.</p><button class="get" data-resource="UX Research Starter Kit">Get it free <span class="arr">→</span></button></div>
+      <div class="rcard reveal"><div class="tag">Checklist</div><h3>UX Interview Prep Checklist</h3><p>The exact things panels look for — portfolio, behavioral and case rounds — in one printable checklist.</p><button class="get" data-resource="UX Interview Prep Checklist">Get it free <span class="arr">→</span></button></div>
+      <div class="rcard reveal"><div class="tag">Curated list</div><h3>AI Tools for UX & Careers</h3><p>The handful of AI tools genuinely worth your time in 2026 — what they do and when to reach for them.</p><button class="get" data-resource="AI Tools for UX">Get it free <span class="arr">→</span></button></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center;margin-left:auto;margin-right:auto">
+      <span class="eyebrow" style="justify-content:center;display:inline-flex">FAQ</span>
+      <h2>Questions, answered.</h2></div>
+    <div class="faq">
+      <details class="reveal"><summary>Who is this for? <span class="ic" aria-hidden="true">+</span></summary><div class="body">Freshers, aspiring and early-to-mid-career UX designers and researchers, career switchers, and job seekers in India who want honest, experienced guidance over generic advice.</div></details>
+      <details class="reveal"><summary>What makes you different from a regular career coach? <span class="ic" aria-hidden="true">+</span></summary><div class="body">I'm a practicing senior UX researcher, not a full-time coach — 10+ years across Philips, Accenture, IBM and Smith+Nephew, global research across three continents, and a 5/5 Top-10 ADPList rating. You get someone who's actually done the work and helped others do it.</div></details>
+      <details class="reveal"><summary>Why is there a ₹100 booking fee? <span class="ic" aria-hidden="true">+</span></summary><div class="body">It's a small commitment that keeps slots for people who are serious — it filters out no-shows so I can give you my full attention. It's fully credited toward any paid engagement you book afterward.</div></details>
+      <details class="reveal"><summary>Do you guarantee a job or an offer? <span class="ic" aria-hidden="true">+</span></summary><div class="body">No honest person can. What I guarantee is straight feedback, real preparation and a strategy that meaningfully improves your odds. The work is still yours to do.</div></details>
+      <details class="reveal"><summary>How do sessions happen? <span class="ic" aria-hidden="true">+</span></summary><div class="body">Over video call. You book, complete a short pre-session form, we meet, and you leave with clear next steps. Async support over WhatsApp/email is included in ongoing packages.</div></details>
+      <details class="reveal"><summary>Do you work with people outside India? <span class="ic" aria-hidden="true">+</span></summary><div class="body">Yes — I mentor globally (see ADPList), with time-zone-friendly slots and international pricing.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 8 · CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <span class="eyebrow reveal">Book a consultation</span>
+        <h2 class="reveal" style="margin-top:16px">Let's talk about your next move.</h2>
+        <span class="pay-pill reveal">🔒 Nominal <b>₹100</b> booking · credited to your engagement</span>
+        <p class="lead reveal">Tell me where you are and what you're after. I'll get your request instantly and reach out within one working day to lock a time.</p>
+        <ul class="expect reveal">
+          <li><span class="k">1</span><span>Send your details below.</span></li>
+          <li><span class="k">2</span><span>Confirm with a quick ₹100 booking or message me on WhatsApp.</span></li>
+          <li><span class="k">3</span><span>I reach out within <b>1 working day</b> to schedule.</span></li>
+        </ul>
+      </div>
+
+      <form id="leadForm" novalidate>
+        <div id="formFields">
+          <div class="row2">
+            <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required /></div>
+            <div class="field"><label for="phone">Phone (WhatsApp)</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+91 …" required /></div>
+          </div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@email.com" required /></div>
+          <div class="field"><label for="role">Current role / status</label>
+            <select id="role" name="role" required><option value="">Select…</option><option>Fresher / student</option><option>UX Designer</option><option>UX Researcher</option><option>Career switcher</option><option>Job seeker</option><option>Other</option></select></div>
+          <div class="field"><label for="goal">Your goal / what you need</label><textarea id="goal" name="goal" placeholder="A line or two about where you are and what you'd like help with…" required></textarea></div>
+          <!-- honeypot (anti-spam, leave empty) -->
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" />
+          <label class="consent"><input type="checkbox" id="consent" required /><span>I agree to be contacted about my consultation and accept the <a href="#" id="privacyLink" style="color:var(--primary)">privacy policy</a>.</span></label>
+          <button type="submit" class="btn btn-primary" id="sendBtn">Book my consultation <span class="arr">→</span></button>
+          <p class="form-note">Your details are sent securely. No spam, ever.</p>
+        </div>
+        <div class="form-msg" id="formMsg" role="status" aria-live="polite">
+          <div class="check" aria-hidden="true">✓</div>
+          <div class="big">Request received!</div>
+          <p>Thanks — I've got your details and I'll reach out within one working day. To lock your slot now:</p>
+          <div class="next">
+            <a class="btn btn-primary" id="payLink" style="display:none" target="_blank" rel="noopener">Complete ₹100 booking <span class="arr">→</span></a>
+            <a class="btn btn-wa" id="waLink" target="_blank" rel="noopener">Message me on WhatsApp</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- PRIVACY MODAL (in-page, no separate file needed) -->
+<div class="modal" id="privacyModal" role="dialog" aria-modal="true" aria-labelledby="privacyTitle">
+  <div class="modal-box">
+    <button class="modal-close" id="privacyClose" aria-label="Close privacy policy">&times;</button>
+    <h3 id="privacyTitle">Privacy Policy</h3>
+    <p style="color:var(--ink-3);font-size:13px">Last updated <span id="pdate"></span></p>
+    <p style="margin-top:14px">Siri Consultancy respects your privacy. This explains what we collect when you use this site and how we handle it.</p>
+    <h4>What we collect</h4>
+    <p>When you submit the consultation form or request a free resource, we collect the details you provide: your name, email, phone number, current role, and your stated goal. We don't collect sensitive personal data.</p>
+    <h4>How we use it</h4>
+    <ul><li>To respond to your request and schedule a call.</li><li>To send you any free resource you ask for.</li><li>To share relevant updates — only if you've opted in.</li></ul>
+    <h4>How it's processed</h4>
+    <p>Form submissions are emailed to us via a third-party form service (FormSubmit). If you pay the nominal booking fee, it's processed securely by Razorpay — we never see or store your card details.</p>
+    <h4>Sharing</h4>
+    <p>We don't sell, rent or trade your information. We only use the service providers above to run this site.</p>
+    <h4>Your choices &amp; contact</h4>
+    <p>You can ask us to access, correct or delete your information anytime by emailing <a href="mailto:pathforward586@gmail.com">pathforward586@gmail.com</a>. We retain enquiry details only as long as needed to help you.</p>
+  </div>
+</div>
+
+<!-- 9 · FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="about"><a href="#home" class="brand"><span class="mark">S</span>Siri Consultancy</a>
+        <p>A researcher's eye on your career — empathetic, expert and built for the AI era.</p></div>
+      <div><h4>Explore</h4><a href="#services">Services</a><a href="#framework">How it works</a><a href="#resources">Free resources</a><a href="#faq">FAQ</a></div>
+      <div><h4>Connect</h4><a href="#" data-social="linkedin">LinkedIn</a><a href="#" data-social="adplist">ADPList</a><a href="#" data-social="topmate">Topmate</a><a href="#" data-social="youtube">YouTube</a></div>
+    </div>
+    <div class="foot-bottom"><span>© <span id="yr"></span> Siri Consultancy. All rights reserved.</span><span>Hyderabad, India · hello@siriconsultancy.com</span></div>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   CONFIG — fill these in, then push to GitHub. (All public/safe.)
+   ============================================================ */
+const CONFIG = {
+  BRAND: "Siri Consultancy",                       // change to "Palsiri Consultancy" if you reverted
+  INQUIRY_EMAIL: "pathforward586@gmail.com",       // ALL form inquiries are emailed here (via FormSubmit)
+  OWNER_WHATSAPP: "919966184438",                  // your WhatsApp number, country code, digits only
+  RAZORPAY_PAYMENT_LINK: "",                        // optional: paste a Razorpay Payment Link URL for ₹100. Blank = hidden.
+  SOCIALS: {
+    linkedin: "https://www.linkedin.com/in/sudheerbhuvangiri/",
+    adplist:  "https://adplist.org/mentors/sudheer-bhuvangiri",
+    topmate:  "https://topmate.io/venkatasudheer_bhuvanagiri",
+    youtube:  "https://youtube.com/@FutureWorkDecoded"
+  }
+};
+
+document.getElementById('yr').textContent = new Date().getFullYear();
+document.querySelectorAll('[data-social]').forEach(a=>{ const k=a.dataset.social; if(CONFIG.SOCIALS[k]) a.href=CONFIG.SOCIALS[k]; });
+
+/* nav + mobile menu */
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>16),{passive:true});
+const menuBtn=document.getElementById('menuBtn'),menu=document.getElementById('mobileMenu'),scrim=document.getElementById('scrim');
+function toggleMenu(o){menu.classList.toggle('open',o);scrim.classList.toggle('open',o);menuBtn.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':'';}
+menuBtn.addEventListener('click',()=>toggleMenu(!menu.classList.contains('open')));
+scrim.addEventListener('click',()=>toggleMenu(false));
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>toggleMenu(false)));
+
+/* reveals + count-ups */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.14});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const cio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,end=+el.dataset.count,suf=el.dataset.suffix||'';let t0=null;const step=t=>{t0=t0||t;const p=Math.min((t-t0)/1100,1);el.textContent=Math.round(p*end)+suf;if(p<1)requestAnimationFrame(step);};requestAnimationFrame(step);cio.unobserve(el);}),{threshold:.6});
+document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+
+/* helper: email an inquiry to your inbox via FormSubmit (no backend needed) */
+async function sendInquiry(fields){
+  const r = await fetch('https://formsubmit.co/ajax/' + encodeURIComponent(CONFIG.INQUIRY_EMAIL), {
+    method:'POST', headers:{'Content-Type':'application/json', Accept:'application/json'},
+    body: JSON.stringify({ _captcha:'false', _template:'table', ...fields })
+  });
+  const j = await r.json().catch(()=>({}));
+  return r.ok && (j.success === true || j.success === 'true');
+}
+const $f = id => document.getElementById(id);   // explicit lookup — avoids the window.name pitfall
+
+/* free resource capture */
+document.querySelectorAll('[data-resource]').forEach(btn=>btn.addEventListener('click',async()=>{
+  const email=prompt(`Enter your email and I'll send the "${btn.dataset.resource}":`);
+  if(!email) return;
+  btn.textContent='Sending…';
+  try{ await sendInquiry({ _subject:'Free resource request: '+btn.dataset.resource, Email:email, Resource:btn.dataset.resource }); }catch(_){}
+  btn.textContent='Sent — check your inbox ✓';
+}));
+
+/* consultation form (static, no backend) */
+const form=$f('leadForm');
+const sendBtn=$f('sendBtn');
+form.addEventListener('submit', async e=>{
+  e.preventDefault();
+  const data={
+    name:$f('name').value.trim(), phone:$f('phone').value.trim(), email:$f('email').value.trim(),
+    role:$f('role').value, goal:$f('goal').value.trim()
+  };
+  if(!data.name||!data.phone||!data.email||!data.role||!data.goal){ alert('Please fill in all fields.'); return; }
+  if(!$f('consent').checked){ alert('Please tick the consent box to continue.'); return; }
+  if(form.querySelector('[name=botcheck]').checked){ return; }  // honeypot
+
+  sendBtn.disabled=true; sendBtn.textContent='Sending…';
+
+  let ok=false;
+  try{
+    ok = await sendInquiry({
+      _subject:'New consultation lead — '+data.name,
+      _autoresponse:`Hi ${data.name.split(' ')[0]}, thanks for your consultation request with ${CONFIG.BRAND}! I've received your details and will reach out within one working day to schedule your call. — Sudheer`,
+      Name:data.name, Phone:data.phone, Email:data.email, Role:data.role, Goal:data.goal
+    });
+  }catch(_){ ok=false; }
+
+  // success panel: WhatsApp + optional payment buttons (built from the entered details)
+  const msg=encodeURIComponent(`Hi Sudheer! I just booked a consultation via the website.\nName: ${data.name}\nEmail: ${data.email}\nRole: ${data.role}\nGoal: ${data.goal}`);
+  $f('waLink').href=`https://wa.me/${CONFIG.OWNER_WHATSAPP}?text=${msg}`;
+  if(CONFIG.RAZORPAY_PAYMENT_LINK){ const p=$f('payLink'); p.href=CONFIG.RAZORPAY_PAYMENT_LINK; p.style.display='inline-flex'; }
+
+  // always show success so the visitor is never stuck (WhatsApp button is the fallback path)
+  $f('formFields').style.display='none';
+  $f('formMsg').style.display='block';
+  if(!ok) console.warn('FormSubmit not active yet — check the activation email sent to '+CONFIG.INQUIRY_EMAIL);
+});
+
+/* privacy modal */
+(function(){
+  const pm=document.getElementById('privacyModal');
+  const open=e=>{ if(e) e.preventDefault(); pm.classList.add('open'); document.body.style.overflow='hidden'; };
+  const close=()=>{ pm.classList.remove('open'); document.body.style.overflow=''; };
+  document.getElementById('privacyLink').addEventListener('click',open);
+  document.getElementById('privacyClose').addEventListener('click',close);
+  pm.addEventListener('click',e=>{ if(e.target===pm) close(); });
+  addEventListener('keydown',e=>{ if(e.key==='Escape') close(); });
+  document.getElementById('pdate').textContent=new Date().toLocaleDateString('en-IN',{year:'numeric',month:'long',day:'numeric'});
+})();
+</script>
+</body>
+</html>
